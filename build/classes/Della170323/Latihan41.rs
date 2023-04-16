@@ -1,0 +1,1 @@
+Della310323.Latihan41
