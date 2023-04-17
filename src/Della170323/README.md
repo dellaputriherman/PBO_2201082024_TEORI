@@ -59,4 +59,3 @@ a/(b^(c^d))-e+f-(g*h)+i)
 (((r^s)*t)/u)-v +(w^x)-y++
 
 Program ini adalah contoh sederhana cara mencetak teks ke konsol di Java menggunakan System.out.println().
-
