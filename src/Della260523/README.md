@@ -14,7 +14,6 @@ Variabel instance: Ada satu variabel instance yang dideklarasikan sebagai privat
 Konstruktor: Kode memiliki satu konstruktor dengan parameter double radius. Konstruktor ini digunakan untuk membuat objek Circle dengan memberikan nilai jari-jari awal.
 Metode getArea(): Metode ini mengembalikan nilai bertipe double yang merupakan luas lingkaran. Luas lingkaran dihitung dengan rumus 3.14 * radius * radius. Dalam implementasi ini, nilai pi telah disederhanakan menjadi 3.14.
 Metode getName(): Metode ini mengembalikan nilai bertipe String yang merupakan nama lingkaran. Dalam implementasi ini, nama lingkaran sederhana saja yaitu "Circle".
-Dengan menggunakan kelas Circle ini, Anda dapat membuat objek lingkaran dengan memberikan nilai jari-jari pada saat instansiasi. Anda juga dapat menggunakan metode getArea() untuk menghitung luas lingkaran dan metode getName() untuk mendapatkan nama lingkaran.
 =====================================================================================================
 
     PENJELASAN Person.java
@@ -43,7 +42,6 @@ Output:
 makefile
 Name: John
 Address: 123 Main Street
-Dalam contoh ini, objek Person dibuat dan nama serta alamatnya diatur. Kemudian, nilai nama dan alamat dicetak ke konsol.
 ===============================================================================================================================
 
     PENJELASAN Shape2.java
@@ -55,7 +53,6 @@ Kelas Circle: Kelas ini merupakan subkelas dari Shape2 dan mengimplementasikan k
 
 Kelas Square: Kelas ini juga merupakan subkelas dari Shape2 dan mengimplementasikan kelas abstrak Shape. Itu memiliki variabel side yang menyimpan nilai panjang sisi persegi. Konstruktor menerima parameter double side dan menginisialisasi variabel side. Metode getArea() menghitung dan mengembalikan luas persegi menggunakan rumus side * side. Metode getName() mengembalikan nama "Square".
 
-Dalam implementasi ini, Circle dan Square adalah bentuk-bentuk (shapes) yang spesifik dan mengikuti pola umum yang didefinisikan oleh abstraksi Shape. Dengan menggunakan pewarisan dan abstraksi, kita dapat mengakses metode abstrak getArea() dan getName() melalui objek Circle atau Square, serta memanggil metode spesifik masing-masing kelas.
 ================================================================================================================================
 
     PENJELASAN Main.java
@@ -68,7 +65,6 @@ Metode main(): Metode ini adalah metode utama yang akan dieksekusi saat program 
 
 Baris pertama dalam metode main() membuat objek Circle dengan jari-jari 10. Objek tersebut disimpan dalam variabel circle.
 Baris kedua mencetak pesan ke konsol yang mencakup nama lingkaran dan luasnya. circle.getName() mengembalikan nama lingkaran ("Circle") dan circle.getArea() mengembalikan luas lingkaran yang dihitung menggunakan rumus 3.14 * radius * radius.
-Baris ketiga melakukan hal yang sama untuk objek Square. Objek Square dibuat dengan sisi 5 dan disimpan dalam variabel square. Pesan yang mencakup nama persegi dan luasnya dicetak ke konsol.
 =====================================================================================================================================
 
     PENJELASAN Square.java
@@ -95,7 +91,6 @@ makefile
 
 Area: 25.0
 Name: Square
-Dalam contoh ini, persegi dibuat dengan panjang sisi 5.0. Kemudian, luas dan nama persegi dicetak ke konsol.
 ================================================================================================================================
 
     PENJELASAN Student.java
@@ -110,7 +105,6 @@ Metode getName(): Metode ini merupakan overriding (penggantian) metode getName()
 
 Metode main(): Metode ini merupakan metode utama yang akan dieksekusi saat program dijalankan. Di dalamnya, objek Student dengan nama anna dibuat. Kemudian, pesan yang mencakup nilai properti name dan address dari anna dicetak ke konsol.
 
-Dalam contoh ini, ketika objek Student dibuat, konstruktor Student dieksekusi. Konstruktor tersebut memanggil konstruktor Person melalui super() dan mengatur nilai name dan address melalui super.name dan super.address. Selanjutnya, metode main() mencetak nilai properti name dan address dari objek anna ke konsol.
 ====================================================================================================================================
 
     PENJELASAN StudentComputer.java
@@ -126,8 +120,6 @@ Metode getAverage(): Metode ini menghitung dan mengembalikan rata-rata dari tiga
 Metode getName(): Metode ini merupakan overriding (penggantian) metode getName() dari kelas StudentRecord. Dalam implementasi ini, metode getName() mencetak pesan ke konsol dan mengembalikan nilai properti name dari kelas StudentRecord.
 
 Metode main(): Metode ini merupakan metode utama yang akan dieksekusi saat program dijalankan. Di dalamnya, objek StudentComputer dengan nama siswa1 dibuat. Nilai-nilai untuk mata pelajaran dan informasi siswa diatur menggunakan metode setter. Kemudian, pesan yang mencakup informasi siswa dan nilai mata pelajaran dicetak ke konsol menggunakan metode getter.
-
-Dalam contoh ini, objek siswa1 dibuat menggunakan kelas StudentComputer. Nilai-nilai mata pelajaran dan informasi siswa diatur menggunakan metode setter. Objek siswa1 juga diberikan referensi ref yang merupakan objek StudentRecord. Hal ini memungkinkan untuk mengakses metode getName(), getAddress(), dan getAge() dari objek siswa1 melalui referensi ref.
 =====================================================================================================================================
 
     PENJELASAN StudentRecord.java
@@ -146,5 +138,4 @@ Dalam contoh ini, terdapat dua subkelas yang meng-extend StudentRecord, yaitu St
 
 Kelas StudentRecord tidak dijalankan secara langsung dalam metode main(). Namun, kelas ini menjadi superclass yang digunakan untuk menciptakan objek siswa1 pada contoh sebelumnya dalam kelas StudentComputer.
 
-Kelas StudentRecord berfungsi sebagai entitas yang menyimpan informasi dasar siswa, seperti nama, alamat, dan usia. Subkelas dapat meng-extend dan memperluas fungsionalitas kelas ini sesuai dengan kebutuhan aplikasi.
 ================================================================================================================================
