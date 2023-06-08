@@ -12,9 +12,10 @@ Berikut adalah penjelasan lebih detail tentang kode tersebut:
 Deklarasi kelas: Kode dimulai dengan deklarasi kelas Circle menggunakan kata kunci public. Ini berarti kelas ini dapat diakses dari bagian lain dari program.
 Variabel instance: Ada satu variabel instance yang dideklarasikan sebagai private double radius. Variabel ini menyimpan nilai jari-jari lingkaran.
 Konstruktor: Kode memiliki satu konstruktor dengan parameter double radius. Konstruktor ini digunakan untuk membuat objek Circle dengan memberikan nilai jari-jari awal.
-Metode getArea(): Metode ini mengembalikan nilai bertipe double yang merupakan luas lingkaran. Luas lingkaran dihitung dengan rumus 3.14 * radius * radius. Dalam implementasi ini, nilai pi telah disederhanakan menjadi 3.14.
+Metode getArea(): Metode ini mengembalikan nilai bertipe double yang merupakan luas lingkaran. Luas lingkaran dihitung dengan rumus 3.14 * radius * radius. Dalam implementasi ini, nilai pi telah disederhanakan menjadi 3.14. 
 Metode getName(): Metode ini mengembalikan nilai bertipe String yang merupakan nama lingkaran. Dalam implementasi ini, nama lingkaran sederhana saja yaitu "Circle".
-=====================================================================================================
+
+=================================================================================================================
 
     PENJELASAN Person.java
     
@@ -37,11 +38,7 @@ String address = person.getAddress();
 
 System.out.println("Name: " + name);
 System.out.println("Address: " + address);
-Output:
 
-makefile
-Name: John
-Address: 123 Main Street
 ===============================================================================================================================
 
     PENJELASAN Shape2.java
@@ -65,6 +62,7 @@ Metode main(): Metode ini adalah metode utama yang akan dieksekusi saat program 
 
 Baris pertama dalam metode main() membuat objek Circle dengan jari-jari 10. Objek tersebut disimpan dalam variabel circle.
 Baris kedua mencetak pesan ke konsol yang mencakup nama lingkaran dan luasnya. circle.getName() mengembalikan nama lingkaran ("Circle") dan circle.getArea() mengembalikan luas lingkaran yang dihitung menggunakan rumus 3.14 * radius * radius.
+
 =====================================================================================================================================
 
     PENJELASAN Square.java
@@ -91,6 +89,7 @@ makefile
 
 Area: 25.0
 Name: Square
+
 ================================================================================================================================
 
     PENJELASAN Student.java
@@ -120,6 +119,7 @@ Metode getAverage(): Metode ini menghitung dan mengembalikan rata-rata dari tiga
 Metode getName(): Metode ini merupakan overriding (penggantian) metode getName() dari kelas StudentRecord. Dalam implementasi ini, metode getName() mencetak pesan ke konsol dan mengembalikan nilai properti name dari kelas StudentRecord.
 
 Metode main(): Metode ini merupakan metode utama yang akan dieksekusi saat program dijalankan. Di dalamnya, objek StudentComputer dengan nama siswa1 dibuat. Nilai-nilai untuk mata pelajaran dan informasi siswa diatur menggunakan metode setter. Kemudian, pesan yang mencakup informasi siswa dan nilai mata pelajaran dicetak ke konsol menggunakan metode getter.
+
 =====================================================================================================================================
 
     PENJELASAN StudentRecord.java
